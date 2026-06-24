@@ -217,8 +217,8 @@
   .chapter-item.done .ch-name { color: var(--mid); }
   .chapter-item.done .ch-num { color: rgba(255,255,255,0.18); }
   .ch-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.10em; color: var(--yellow); min-width: 36px; text-transform: uppercase; }
-  .ch-name { font-size: 14px; color: var(--white); flex: 1; }
-  .chapter-item.active .ch-name { font-weight: 500; }
+  .ch-name { font-size: 14px; color: #9AA0A8; flex: 1; }
+  .chapter-item.active .ch-name { font-weight: 500; color: var(--white); }
   .ch-time { font-size: 12px; color: var(--mid); font-variant-numeric: tabular-nums; }
 </style>
 </head>
@@ -311,27 +311,28 @@
 <script>
 const VIDEO_ID = '4XRWs2hcHJg';
 const steps = [
-  { label: "Introduction",  time: 0 },
-  { label: "Prérequis",     time: 30 },
-  { label: "Étape 4",       time: 75 },
-  { label: "Étape 5",       time: 104 },
-  { label: "Étape 6.2",     time: 166 },
-  { label: "Étape 6.4",     time: 200 },
-  { label: "Étape 7.1",     time: 217 },
-  { label: "Étape 7.2",     time: 235 },
-  { label: "Étape 7.3",     time: 247 },
-  { label: "Étape 7.4",     time: 258 },
-  { label: "Étape 8",       time: 285 },
-  { label: "Étape 9.1",     time: 301 },
-  { label: "Étape 10",      time: 327 },
-  { label: "Étape 11.1",    time: 365 },
-  { label: "Étape 11.2",    time: 377 },
-  { label: "Étape 12.2",    time: 411 },
-  { label: "Étape 12.4",    time: 424 },
-  { label: "Étape 13",      time: 503 },
-  { label: "Étape 13.4",    time: 513 },
-  { label: "Étape finale",  time: 545 },
-  { label: "Conseils",      time: 564 }
+  { label: "Introduction",                                                                        time: 0 },
+  { label: "Prérequis",                                                                           time: 30 },
+  { label: "4. Préparation des cadres",                                                           time: 75 },
+  { label: "5. Mise en situation de la pergola",                                                  time: 104 },
+  { label: "6.2. Montage des sabots",                                                             time: 166 },
+  { label: "6.4. Prévisions des emplacements",                                                    time: 200 },
+  { label: "7.1. Assemblage du cadre haut avec les poteaux droit et gauche",                     time: 217 },
+  { label: "7.2. Préparation des cadres latéraux",                                                time: 235 },
+  { label: "7.3. Assemblage du cadre gauche/droit avec le poteau gauche/droit",                  time: 247 },
+  { label: "7.4. Assemblage des ensembles cadre/poteau sur le cadre haut",                       time: 258 },
+  { label: "8. Réglage de la pergola avant mise en place des lames",                            time: 285 },
+  { label: "9.1. Fixation de la pergola au sol",                                                  time: 301 },
+  { label: "10. Branchement électrique de la pergola",                                            time: 327 },
+  { label: "11.1. Montage des rubans Led indirects (option)",                                     time: 365 },
+  { label: "11.2. Montage des modules Led directs (option)",                                      time: 377 },
+  { label: "11.3. Branchement des Led",                                                           time: 396 },
+  { label: "12.1. Raccordement de la barre de synchronisation avec la bielle",                   time: 411 },
+  { label: "12.4. Montage du tablier de lames",                                                   time: 424 },
+  { label: "13. Assemblage des carters de finitions",                                             time: 513 },
+  { label: "13.4. Montage du carter moteur",                                                      time: 530 },
+  { label: "Étape finale",                                                                        time: 545 },
+  { label: "Conseils",                                                                            time: 554 }
 ];
 
 let current = 0;
